@@ -10,12 +10,14 @@ let inputAngle = 47;
 let branches = 10;
 
 angleSlider.oninput = function () {
+    this.nextElementSibling.value = this.value;
     ctx.clearRect(0,0,canvas.width,canvas.height);
     inputAngle = Number(angleSlider.value);
     draw(canvas.width/2, canvas.height/1.25, 120, 0 , 10);
 }
 
 branchesSlider.oninput = function () {
+    this.nextElementSibling.value = this.value;
     ctx.clearRect(0,0,canvas.width,canvas.height);
     branches = Number(branchesSlider.value);
     draw(canvas.width/2, canvas.height/1.25, 120, 0 , 10);
