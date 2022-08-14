@@ -9,24 +9,42 @@ canvas {
     top: -10;
     left: 0;
     overflow: hidden;
+    background: linear-gradient(lightblue, white);
 }
 
-.slidecontainer {
-    width: 10rem; /* Width of the outside container */
-  }
-  
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(0, 30, 128, 0.411);
+  height: 5rem;
+}  
+
+.slideContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  font-size: 1rem;
+}
+
+
 
 .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
+    width: 10rem; /* Full-width */
+    height: 2rem; /* Specified height */
     background: #d3d3d3; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
-    z-index: 2;
   }
   
   /* Mouse-over effects */
@@ -38,15 +56,15 @@ canvas {
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 2.5rem; /* Set a specific slider handle width */
+    height: 2.5rem; /* Slider handle height */
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
   
   .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 2rem; /* Set a specific slider handle width */
+    height: 2rem; /* Slider handle height */
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
